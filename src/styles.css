@@ -1,0 +1,45 @@
+body {
+  background: #0f2d4e;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orb {
+  background-image: linear-gradient(
+    to right,
+    #f9f5f3 0%,
+    #fc3e4f 50%,
+    #5096cf 100%
+  );
+  background-size: 150%;
+  box-shadow: inset 3px 5px 20px rgba(255, 255, 255, 0.5);
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  animation: glow 30s ease-in-out infinite;
+}
+
+@keyframes glow {
+  10% {
+    background-position: 0% 50%;
+    transform: rotate(90deg);
+  }
+  15% {
+    background-position: 100% 50%;
+    transform: rotate(175deg);
+  }
+  40% {
+    background-position: 0% 50%;
+    transform: rotate(260deg);
+  }
+  80% {
+    background-position: 100% 50%;
+    transform: rotate(195deg);
+  }
+  85% {
+    background-position: 0% 50%;
+    transform: rotate(90deg);
+  }
+}
